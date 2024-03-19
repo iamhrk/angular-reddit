@@ -1,0 +1,66 @@
+.section-app {
+  padding: 0 25%;
+}
+
+.form {
+  background-color: rgba(lightblue, 0.85);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid ;
+  box-shadow: 1px 2px 2px #ccc;
+}
+
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  margin-left: auto;
+  margin-top: 8px;
+  padding: 7px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(27, 202, 27);
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: darken(rgb(27, 202, 27), 10%); 
+}
+
+
+.form-group {
+  margin: 13px 0;
+}
+
+.form-group * {
+  display: block;
+  width: 100%;
+  margin: 4.5px 0;
+}
+
+.form-group label {
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+
+.form-group .form-control {
+  color: black;
+  background-color: #fff;
+  text-indent: 15px;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-group .form-control:active,
+.form-group .form-control:focus {
+  border: 1px solid darken(lightblue, 25%);
+  outline: none;
+}
+

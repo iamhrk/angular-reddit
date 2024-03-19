@@ -1,14 +1,24 @@
-<form ui large form segment>
-  <h3 class="ui header">Add a Link</h3>
+<section class="section-app">
+  <div class="form">
 
-  <div class="field">
-    <label for="title">Title:</label>
-    <input name="title" id="title">
+    <form>
+      <h3 class="title">Add a Link</h3>
+
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input class="form-control" name="title" id="title">
+      </div>
+
+      <div class="form-group">
+        <label for="link">Link:</label>
+        <input class="form-control" name="link" id="link">
+      </div>
+
+      <div class="button-container">
+        <button>
+          Submit Link
+        </button>
+      </div>
+    </form>
   </div>
-
-  <div class="field">
-    <label for="link">Link:</label>
-    <input name="link" id="link">
-  </div>
-
-</form>
+</section>
