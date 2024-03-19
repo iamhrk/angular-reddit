@@ -2,6 +2,11 @@
   padding: 0 25%;
 }
 
+.articles {
+  padding: 0 25%;
+  margin-top: 30px;
+}
+
 .form {
   background-color: rgba(lightblue, 0.85);
   padding: 15px;
@@ -29,7 +34,7 @@
 }
 
 .button-container button:hover {
-  background-color: darken(rgb(27, 202, 27), 10%); 
+  background-color: darken(rgb(27, 202, 27), 10%);
 }
 
 

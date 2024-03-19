@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent {
+  votes: number;
+  title: string;
+  link: string;
 
+  constructor() {
+    this.title = 'Angular';
+    this.link = 'https://angular.io';
+    this.votes = 10;
+  }
+
+  voteUp(): boolean {
+    this.votes++;
+    return false;
+  }
+
+  voteDown(): boolean {
+    this.votes--;
+    return false;
+  }
 }
