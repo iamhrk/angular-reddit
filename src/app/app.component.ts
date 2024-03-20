@@ -17,7 +17,9 @@ export class AppComponent {
     ]
   }
 
-
+  sortArticles(): Article[] {
+    return this.articles.sort( (a: Article, b: Article)=> b.votes - a.votes );
+  }
 
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
