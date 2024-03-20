@@ -5,17 +5,18 @@
   </div>
 
   <div class="content">
-    <span class="title"> {{ article.title }}</span>
-    <span class="link"> {{ article.link }}</span>
+    <a class="title" [href]="article.link"> {{ article.title }}</a>
+    <div>( {{ article.domain()  }} )</div>
+    <div class="votes">
+      <a (click)="voteUp()">
+        <i class="fa fa-arrow-up">&nbsp;upvote</i>
+      </a>
+      <a (click)="voteDown()">
+        <i class="fa fa-arrow-up">&nbsp;downvote</i>
+      </a>
+    </div>
   </div>
 
-  <div class="votes">
-    <a (click)="voteUp()">
-      <i class="fa fa-arrow-up">&nbsp;upvote</i>
-    </a>
-    <a (click)="voteDown()">
-      <i class="fa fa-arrow-up">&nbsp;downvote</i>
-    </a>
-  </div>
+
 
 </div>
